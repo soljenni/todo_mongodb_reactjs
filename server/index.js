@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5800;
 
 //use cors -> allow access from different address(localhost:3000 => 5500)
 app.use(cors());
-
+app.use(express.static("public"));
 //importing routes
 const TodoItemRoute = require("./routes/todoItems");
 
